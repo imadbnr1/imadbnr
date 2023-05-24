@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Account | RichlyRuff.</title>
+        <link rel="stylesheet" href="./src/css/main.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/svg+xml" href="./images/header/logo1.png">
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="./index.html"><img src="./images/header/logo%20(1).png" alt="comp" width="225px"></a>
+                    </div>
+                    <nav>
+                        <ul class="nav-menu">
+                            <li class="nav-item"><a href="index.html">Home</a></li>
+                            <li class="nav-item"><a href="products.html">Products</a></li>
+                            <li class="nav-item"><a href="#footer">Contact Us</a></li>
+                            <li class="nav-item"><a href="account.html">Account</a></li>
+                        </ul>
+                    </nav>
+                    <a href="cart.html"><img class="cart" src="./images/header/cart.svg"></a>
+                    <div class="toggle"><i class="fa fa-bars"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="formPage">
+                <div class="btn" id="removeLog" onclick="login()">Existing User? Login</div>
+                <div class="btn" id="removeReg" onclick="register()">New User? Register</div>
+                <form class="showForm" id="loginForm" action="login.php" method="POST">
+    <h3>Login</h3>
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <button type="submit" class="btn">Login</button>
+    <a href="linkgoeshere">Forgot Password</a>
+</form>
+<form class="showForm" id="registerForm" action="login.php" method="POST">
+    <h3>Register</h3>
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="email" name="email" placeholder="E-mail" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <small>I agree to the following Terms and Conditions*</small>
+    <button type="submit" class="btn">Register</button>
+</form>
+            </div>
+        </div>
+        <div class="footer" id="footer">
+            <div class="container">
+                <div class="child">
+                    <div class="footerChild1">
+                        <img src="./images/header/logo%20(1).png">
+                        <h4>Mail us at: <a href="imad.benrouane@etu.univ-batna2.dz">imad.benrouane@etu.univ-batna2.dz</a></h4>
+                    </div>
+                    <div class="footerChild2">
+                        <h3>Our Socials</h3>
+                        <ul>
+                            <li><a href="https://www.instagram.com/imed_bnr/">Instagram</a></li>
+                            <li><a href="https://www.facebook.com/imed.benrouane">Facebook</a></li>
+                            <li>Phone Number : <a href="+2130696938526">0696938526</a></li>
+                        </ul>
+                    <div class="footerChild2">
+                        <h3>Our Place</h3>
+                        <ul>
+                            <li>Batna</li>
+                            <li>5 Juillet </li>
+                            <li>in front of Center Culture Islamic </li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="belowfooter">
+                    &copy; Richly Ruff .2023 <br>
+                    Made By IMAD BENROUANE , All rights reserved.
+                </div>
+            </div>
+        </div>
+        <script src="./src/js/script.js"></script>
+    </body>
+</html>
